@@ -1,0 +1,7 @@
+C:/Users/aleks/Desktop/lab1/mp2-lab1-set/CMakeFiles/ALL_BUILD.dir
+C:/Users/aleks/Desktop/lab1/mp2-lab1-set/CMakeFiles/ZERO_CHECK.dir
+C:/Users/aleks/Desktop/lab1/mp2-lab1-set/src/CMakeFiles/set.dir
+C:/Users/aleks/Desktop/lab1/mp2-lab1-set/samples/CMakeFiles/sample_prime_numbers.dir
+C:/Users/aleks/Desktop/lab1/mp2-lab1-set/gtest/CMakeFiles/gtest.dir
+C:/Users/aleks/Desktop/lab1/mp2-lab1-set/test/CMakeFiles/test_set.dir
+C:/Users/aleks/Desktop/lab1/mp2-lab1-set/time_check/CMakeFiles/time_check.dir
