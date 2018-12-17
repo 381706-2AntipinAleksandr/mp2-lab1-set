@@ -1,6 +1,4 @@
-﻿  Building Custom Rule C:/Users/aleks/Desktop/lab1/mp2-lab1-set/gtest/CMakeLists.txt
-  CMake does not need to re-run because C:/Users/aleks/Desktop/lab1/mp2-lab1-set/gtest/CMakeFiles/generate.stamp is up-to-date.
-  gtest-all.cc
+﻿  gtest-all.cc
 c:\users\aleks\desktop\lab1\mp2-lab1-set\gtest\gtest.h(9690): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
   c:\program files (x86)\microsoft visual studio\2017\enterprise\vc\tools\msvc\14.14.26428\include\tuple(1163): note:  см. объявление "std::tr1"
 c:\users\aleks\desktop\lab1\mp2-lab1-set\gtest\gtest.h(9695): warning C4996: 'std::tr1': warning STL4002: The non-Standard std::tr1 namespace and TR1-only machinery are deprecated and will be REMOVED. You can define _SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING to acknowledge that you have received this warning.
