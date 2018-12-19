@@ -1,44 +1,44 @@
 ﻿#include "tbitfield.h"
-#include <time.h>
+//#include <time.h>
 #include <iostream>
-#include <chrono>
+//#include <chrono>
 
 //#define OR
 
-void main()
-{
-	TBitField A100(100);
-	TBitField B100(100);
-	for(int i = 0; i < 100; i++)
-		if (i % 2 == 0)
-		{
-			A100.SetBit(i);
-			B100.SetBit(i);
-		}
-	TBitField A1000(1000);
-	TBitField B1000(1000);
-	for (int i = 0; i < 1000; i++)
-		if (i % 2 == 0)
-		{
-			A1000.SetBit(i);
-			B1000.SetBit(i);
-		}
-	TBitField A10000(10000);
-	TBitField B10000(10000);
-	for (int i = 0; i < 10000; i++)
-		if (i % 2 == 0)
-		{
-			A10000.SetBit(i);
-			B10000.SetBit(i);
-		}
-	TBitField A100000(100000);
-	TBitField B100000(100000);
-	for (int i = 0; i < 100000; i++)
-		if (i % 2 == 0)
-		{
-			A100000.SetBit(i);
-			B100000.SetBit(i);
-		}
+//void main()
+//{
+//	TBitField A100(100);
+//	TBitField B100(100);
+//	for(int i = 0; i < 100; i++)
+//		if (i % 2 == 0)
+//		{
+//			A100.SetBit(i);
+//			B100.SetBit(i);
+//		}
+//	TBitField A1000(1000);
+//	TBitField B1000(1000);
+//	for (int i = 0; i < 1000; i++)
+//		if (i % 2 == 0)
+//		{
+//			A1000.SetBit(i);
+//			B1000.SetBit(i);
+//		}
+//	TBitField A10000(10000);
+//	TBitField B10000(10000);
+//	for (int i = 0; i < 10000; i++)
+//		if (i % 2 == 0)
+//		{
+//			A10000.SetBit(i);
+//			B10000.SetBit(i);
+//		}
+//	TBitField A100000(100000);
+//	TBitField B100000(100000);
+//	for (int i = 0; i < 100000; i++)
+//		if (i % 2 == 0)
+//		{
+//			A100000.SetBit(i);
+//			B100000.SetBit(i);
+//		}
 	#ifdef OR
 	auto begin = std::chrono::high_resolution_clock::now();
 	A100 & B100;
@@ -56,7 +56,7 @@ void main()
 	A100000 & B100000;
 	end = std::chrono::high_resolution_clock::now();
 	std::cout << "100000 elements - " << std::chrono::duration_cast<std::chrono::nanoseconds>(end - begin).count() << "ns" << std::endl;
-	#else
+	//#else
 	auto begin = std::chrono::high_resolution_clock::now();
 	~A100;
 	auto end = std::chrono::high_resolution_clock::now();
@@ -74,4 +74,4 @@ void main()
 	end = std::chrono::high_resolution_clock::now();
 	std::cout << "100000 elements - " << std::chrono::duration_cast<std::chrono::nanoseconds>(end - begin).count() << "ns" << std::endl;
 	#endif
-}
+//}
