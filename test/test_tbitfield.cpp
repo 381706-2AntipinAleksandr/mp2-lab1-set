@@ -2,11 +2,6 @@
 
 #include <gtest.h>
 
-TEST(TBitField, newtest)
-{
-	EXPECT_EQ(3, 3);
-}
-
 TEST(TBitField, can_create_bitfield_with_positive_length)
 {
   ASSERT_NO_THROW(TBitField bf(3));
@@ -196,22 +191,22 @@ TEST(TBitField, or_operator_applied_to_bitfields_of_non_equal_size)
 
 TEST(TBitField, or_operator_applied_to_bitfields_of_non_equal_size_1)
 {
-	const int size1 = 4, size2 = 33;
-	TBitField bf1(size1), bf2(size2), expBf(size2);
-	// bf1 = 0011
-	bf1.SetBit(2);
-	bf1.SetBit(3);
-	// bf2 = 01010
-	bf2.SetBit(1);
-	bf2.SetBit(3);
-	bf2.SetBit(32);
-	// expBf = 01110
-	expBf.SetBit(1);
-	expBf.SetBit(2);
-	expBf.SetBit(3);
-	expBf.SetBit(32);
+  const int size1 = 4, size2 = 33;
+  TBitField bf1(size1), bf2(size2), expBf(size2);
+  // bf1 = 0011
+  bf1.SetBit(2);
+  bf1.SetBit(3);
+  // bf2 = 01010
+  bf2.SetBit(1);
+  bf2.SetBit(3);
+  bf2.SetBit(32);
+  // expBf = 01110
+  expBf.SetBit(1);
+  expBf.SetBit(2);
+  expBf.SetBit(3);
+  expBf.SetBit(32);
 
-	EXPECT_EQ(expBf, bf1 | bf2);
+  EXPECT_EQ(expBf, bf1 | bf2);
 }
 
 TEST(TBitField, and_operator_applied_to_bitfields_of_equal_size)
@@ -250,20 +245,20 @@ TEST(TBitField, and_operator_applied_to_bitfields_of_non_equal_size)
 
 TEST(TBitField, and_operator_applied_to_bitfields_of_non_equal_size_1)
 {
-	const int size1 = 4, size2 = 33;
-	TBitField bf1(size1), bf2(size2), expBf(size2);
-	// bf1 = 0011
-	bf1.SetBit(2);
-	bf1.SetBit(3);
-	// bf2 = 01010
-	bf2.SetBit(1);
-	bf2.SetBit(3);
-	bf2.SetBit(32);
+  const int size1 = 4, size2 = 33;
+  TBitField bf1(size1), bf2(size2), expBf(size2);
+  // bf1 = 0011
+  bf1.SetBit(2);
+  bf1.SetBit(3);
+  // bf2 = 01010
+  bf2.SetBit(1);
+  bf2.SetBit(3);
+  bf2.SetBit(32);
 
-	// expBf = 00010
-	expBf.SetBit(3);
+  // expBf = 00010
+  expBf.SetBit(3);
 
-	EXPECT_EQ(expBf, bf1 & bf2);
+  EXPECT_EQ(expBf, bf1 & bf2);
 }
 
 TEST(TBitField, can_invert_bitfield)
@@ -287,7 +282,7 @@ TEST(TBitField, can_invert_large_bitfield)
   bf.SetBit(35);
   negBf = ~bf;
 
-  for(int i = 0; i < size; i++)
+  for (int i = 0; i < size; i++)
     expNegBf.SetBit(i);
   expNegBf.ClrBit(35);
 
@@ -331,7 +326,7 @@ TEST(TBitField, can_invert_many_random_bits_bitfield)
 
   negBf = ~bf;
 
-  for(int i = 0; i < size; i++)
+  for (int i = 0; i < size; i++)
     expNegBf.SetBit(i);
   for (unsigned int i = 0; i < bits.size(); i++)
     expNegBf.ClrBit(bits[i]);

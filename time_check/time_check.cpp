@@ -5,7 +5,7 @@
 
 //#define OR
 
-int main()
+void main()
 {
 //	TBitField A100(100);
 //	TBitField B100(100);
@@ -74,5 +74,4 @@ int main()
 	end = std::chrono::high_resolution_clock::now();
 	std::cout << "100000 elements - " << std::chrono::duration_cast<std::chrono::nanoseconds>(end - begin).count() << "ns" << std::endl;
 	#endif
-	return 0;
 }
