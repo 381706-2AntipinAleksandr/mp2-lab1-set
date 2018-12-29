@@ -1,4 +1,0 @@
-﻿  tset.cpp
-c:\users\aleks\desktop\lab1\mp2-lab1-set\src\tset.cpp(93): warning C4715: TSet::operator+: значение возвращается не при всех путях выполнения
-c:\users\aleks\desktop\lab1\mp2-lab1-set\src\tset.cpp(121): warning C4715: TSet::operator*: значение возвращается не при всех путях выполнения
-  set.vcxproj -> C:\Users\aleks\Desktop\lab1\mp2-lab1-set\lib\Debug\set.lib

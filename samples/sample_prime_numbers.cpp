@@ -6,6 +6,7 @@
 // Тестирование битового поля и множества
 
 #include <iomanip>
+#include <iostream>
 
 //#define USE_SET // Использовать класс TSet,
                 // закоментировать, чтобы использовать битовое поле
@@ -48,7 +49,15 @@ int main()
         cout << endl;
     }
   cout << endl;
+  int counts = 0;
   cout << "В первых " << n << " числах " << count << " простых" << endl;
+  cout << "Тестирование ввода/вывода битового поля:\nВведите 0 или 1 не более чем 32 раза:\n";
+  cout << "Введите количество элементов в битовом поле: ";
+  cin >> counts;
+  TBitField field(counts);
+  cin >> field;
+  cout << "Вывод этого битового поля:\n";
+  cout << field << endl;
 }
 #else
 
